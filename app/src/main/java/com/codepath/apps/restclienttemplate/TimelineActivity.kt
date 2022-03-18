@@ -61,7 +61,7 @@ class TimelineActivity : AppCompatActivity() {
 
                 try {
                     adapter.clear()
-                    val listOfNewTweetsRetrieved = Tweet.fromJsonArrray(jsonArray)
+                    val listOfNewTweetsRetrieved = Tweet.fromJsonArray(jsonArray)
                     tweets.addAll(listOfNewTweetsRetrieved)
                     adapter.notifyDataSetChanged()
                     // Now we call setRefreshing(false) to signal refresh has finished
